@@ -1,7 +1,3 @@
-int appWidth, appHeight;
-float widthSquare, heightSquare, border=0.0;
-int numPadColumns = 3;
-float[] x = new float [numPadColumns];
-int numPadRows = 5;
-float[] y = new float [numPadRows];
-boolean p = false;
+float appWidth = width, appHeight = height;
+int SquareWidth = width, SquareSize = 150;
+float Squareone = appWidth*2/6, Squaretwo = appWidth*3/6, Squarethree = appWidth*4/6;
