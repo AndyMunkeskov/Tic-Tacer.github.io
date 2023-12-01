@@ -1,5 +1,5 @@
 void setup() {
-  background(#6726AA);
+
   Population();
   size (1000, 1000);
 }
@@ -10,4 +10,10 @@ void draw() {
 void keyPressed () {
 }
 void mousePressed () {
+  //
+  if (mouseX>0 && mouseX<1000 && mouseY>0 && mouseY<1000) {
+    squares = true;
+    quad = false;
+    Background();
+  }
 }

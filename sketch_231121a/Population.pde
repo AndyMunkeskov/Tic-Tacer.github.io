@@ -1,6 +1,7 @@
 void Population () {
   appWidth = width;
   appHeight = width;
+  //
   smallDimension = (appWidth<appHeight) ? appWidth : appHeight;
   side = appWidth * 1/6;
   sidetwo = appWidth * 2/6;
@@ -15,4 +16,4 @@ void Population () {
   BackgroundimgX = appWidth;
   BackgroundimgY = appHeight;
   //
-}
+  }
