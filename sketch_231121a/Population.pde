@@ -9,7 +9,7 @@ void Population () {
   sidefour = appWidth * 4/6;
   sidefive = appWidth * 5/6;
   sidesix = appWidth * 6/6;
-  squaresize = 125;
+  squaresize = 175;
   //
   imgX = appWidth*1/3;
   imgY = appHeight*1/2;

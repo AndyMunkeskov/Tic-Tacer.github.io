@@ -1,4 +1,4 @@
 int appWidth, appHeight, smallDimension;
 float side, sidetwo, sidethree, sidefour, sidefive, sidesix, squaresize;
 float imgX, imgY, BackgroundimgX, BackgroundimgY;
-boolean squares = false, quad = true;
+boolean squares = false, quad = true, background = false;
