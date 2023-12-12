@@ -11,9 +11,4 @@ void Population () {
   sidesix = appWidth * 6/6;
   squaresize = 175;
   //
-  imgX = appWidth*1/3;
-  imgY = appHeight*1/2;
-  BackgroundimgX = appWidth;
-  BackgroundimgY = appHeight;
-  //
   }
