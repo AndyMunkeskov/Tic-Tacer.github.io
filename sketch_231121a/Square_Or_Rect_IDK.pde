@@ -11,5 +11,12 @@ void squares() {
     square(sidetwo, sidefour, squaresize);
     square(sidethree, sidefour, squaresize);
     square(sidefour, sidefour, squaresize);
+    //
+   
+    textSize(50);
+    text("exit", QuitX*1/3, QuitY*1/3);
+    rect(QuitX, QuitY, QuitWidth, QuitHeight);
+   
+   
   }
 }

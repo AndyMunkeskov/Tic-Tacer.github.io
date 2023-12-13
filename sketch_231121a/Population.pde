@@ -11,4 +11,8 @@ void Population () {
   sidesix = appWidth * 6/6;
   squaresize = 175;
   //
+  QuitX = appWidth*5.25/6;
+  QuitY = appHeight*0.6/6;
+  QuitWidth = appWidth*1/11;
+  QuitHeight = appHeight*1/12;
   }

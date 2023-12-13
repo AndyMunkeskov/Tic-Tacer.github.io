@@ -16,5 +16,8 @@ void mousePressed () {
     squares = true;
     quad = false;
     background = true;
-}
+  }
+  if (mouseX>0 && mouseX<QuitX && mouseY>0 && mouseY<QuitY) {
+  exit();
+  }
 }
