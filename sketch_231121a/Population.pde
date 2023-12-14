@@ -15,4 +15,10 @@ void Population () {
   QuitY = appHeight*0.6/6;
   QuitWidth = appWidth*1/11;
   QuitHeight = appHeight*1/12;
-  }
+  //
+  ScoreBoardX = appWidth*3/6;
+  ScoreBoardY = appHeight*1/8;
+  ScoreboardW = appWidth*3/6;
+  ScoreBoardH = appHeight*1/10;
+  //
+}

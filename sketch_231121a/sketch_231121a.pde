@@ -7,6 +7,7 @@ void draw() {
   Background();
   rectMode(CENTER);
   squares();
+  Drawntext();
 }
 void keyPressed () {
 }
@@ -16,8 +17,11 @@ void mousePressed () {
     squares = true;
     quad = false;
     background = true;
+    Drawntext = true;
   }
+
+
   if (mouseX>0 && mouseX<QuitX && mouseY>0 && mouseY<QuitY) {
-  exit();
+    exit();
   }
 }
