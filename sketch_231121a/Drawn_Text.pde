@@ -7,5 +7,6 @@ void Drawntext() {
     textSize(50);
     text("Score", ScoreBoardX*4/6, ScoreBoardY*4/6);
     fill(#FFFFFF);
+    //
 }
 }

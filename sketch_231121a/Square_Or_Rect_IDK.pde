@@ -15,5 +15,6 @@ void squares() {
     rect(QuitX, QuitY, QuitWidth, QuitHeight);
     //
     rect(ScoreBoardX, ScoreBoardY, ScoreboardW, ScoreBoardH);
+    //
   }
 }

@@ -28,3 +28,4 @@ float textCalculator(float size, float rectWidth, String text ) {
   } //End WHILE
   return size;
 } //End Calculator
+//
