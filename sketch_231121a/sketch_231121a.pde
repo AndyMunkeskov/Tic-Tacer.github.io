@@ -19,9 +19,46 @@ void mousePressed () {
     background = true;
     Drawntext = true;
     //
+  
+    if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
+      println("yes");
+     
+    }
+    //
+    if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
+      println("no");
+    }
+    //
+    if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
+      println("maybe");
+    }
+    //
+    if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidethree && mouseY<sidethree + squaresize) {
+      println("possibly");
+    }
+    //
+    if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidethree && mouseY<sidethree + squaresize) {
+      println("perhaps");
+    }
+    //
+    if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidethree && mouseY<sidethree + squaresize) {
+      println("in theory");
+    }
+    //
+    if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
+      println("in consideration");
+    }
+    //
+    if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
+      println("mayhaps");
+    }
+    //
+    if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
+      println("theoretically");
+    }
+    
   }
-
-
+  //
   if (mouseX>0 && mouseX<QuitX && mouseY>0 && mouseY<QuitY) {
     exit();
     //
