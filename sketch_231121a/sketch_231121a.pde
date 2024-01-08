@@ -2,12 +2,26 @@ void setup() {
 
   Population();
   size (1000, 1000);
+  //
+   enteredTimeSeconds = 13; //CAUTION: will need to convert minutes and hours to seconds
+  enteredTimeMilliSeconds = enteredTimeSeconds * 1000;
+  //Last line in Setup to adjust currentTime in void draw(){}
+  timerStart = millis(); //Measure program start time called "scope"
+  println(timerStart);
 }
 void draw() {
   Background();
   rectMode(CENTER);
   squares();
   Drawntext();
+  //
+   currentTime = millis();
+  countingTime = currentTime - timerStart;
+  println(timerStart, currentTime, enteredTimeMilliSeconds);
+  if ( countingTime >= enteredTimeMilliSeconds ) {
+    println("Donereno");
+    //
+  }
 }
 void keyPressed () {
 }
@@ -59,7 +73,7 @@ void mousePressed () {
     
   }
   //
-  if (mouseX>0 && mouseX<QuitX && mouseY>0 && mouseY<QuitY) {
+  if (mouseX>0 && mouseX<QuitX && mouseY>0 && mouseY<QuitY*1.5) {
     exit();
     //
   }

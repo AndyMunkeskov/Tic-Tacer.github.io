@@ -5,4 +5,5 @@ float ScoreBoardX, ScoreBoardY, ScoreboardW, ScoreBoardH;
 float imgX, imgY, BackgroundimgX, BackgroundimgY;
 boolean squares = false, quad = true, background = false, Drawntext = false; 
 char a;
+int timerStart, enteredTimeSeconds, enteredTimeMilliSeconds, currentTime, countingTime;
 //
