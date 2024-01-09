@@ -2,6 +2,7 @@ void setup() {
 
   Population();
   buildingURL();
+  iconBuildingURLSetup();
   APICall(URLCurrentEdmonton);
   size (1000, 1000);
   //
@@ -12,6 +13,9 @@ void setup() {
   println(timerStart);
 }
 void draw() {
+  image (weatherIconImage, 0, 0);
+  rect(widthSquare, heightSquare, widthSquare, heightSquare);
+  fill(#FFFFFF);
   Background();
   rectMode(CENTER);
   squares();
@@ -23,6 +27,7 @@ void draw() {
   if ( countingTime >= enteredTimeMilliSeconds ) {
     println("Donereno");
     //
+  
   }
 }
 void keyPressed () {
@@ -76,7 +81,7 @@ void mousePressed () {
     }
   }
   //
-  if (mouseX>0 && mouseX<QuitX && mouseY>0 && mouseY<QuitY*1.5) {
+  if (mouseX>QuitX && mouseX<QuitX && mouseY>0 && mouseY<QuitY) {
     exit();
     //
   }

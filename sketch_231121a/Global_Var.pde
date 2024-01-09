@@ -7,4 +7,6 @@ boolean squares = false, quad = true, background = false, Drawntext = false;
 char a;
 int timerStart, enteredTimeSeconds, enteredTimeMilliSeconds, currentTime, countingTime;
 String URLCurrentEdmonton, URLForecastEdmonton;
+PImage weatherIconImage;
+float widthSquare, heightSquare;
 //
