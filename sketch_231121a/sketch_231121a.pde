@@ -1,9 +1,11 @@
 void setup() {
 
   Population();
+  buildingURL();
+  APICall(URLCurrentEdmonton);
   size (1000, 1000);
   //
-   enteredTimeSeconds = 13; //CAUTION: will need to convert minutes and hours to seconds
+  enteredTimeSeconds = 13; //CAUTION: will need to convert minutes and hours to seconds
   enteredTimeMilliSeconds = enteredTimeSeconds * 1000;
   //Last line in Setup to adjust currentTime in void draw(){}
   timerStart = millis(); //Measure program start time called "scope"
@@ -15,7 +17,7 @@ void draw() {
   squares();
   Drawntext();
   //
-   currentTime = millis();
+  currentTime = millis();
   countingTime = currentTime - timerStart;
   println(timerStart, currentTime, enteredTimeMilliSeconds);
   if ( countingTime >= enteredTimeMilliSeconds ) {
@@ -24,6 +26,7 @@ void draw() {
   }
 }
 void keyPressed () {
+  if (key=='E' || key=='e') APICall(URLCurrentEdmonton);
 }
 void mousePressed () {
   //
@@ -33,10 +36,11 @@ void mousePressed () {
     background = true;
     Drawntext = true;
     //
-  
+
     if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
       println("yes");
-     
+      //fill(#FFFFFF);
+      text("O", 300, 200);
     }
     //
     if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
@@ -70,7 +74,6 @@ void mousePressed () {
     if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
       println("theoretically");
     }
-    
   }
   //
   if (mouseX>0 && mouseX<QuitX && mouseY>0 && mouseY<QuitY*1.5) {
