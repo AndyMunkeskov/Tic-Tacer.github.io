@@ -43,42 +43,58 @@ void mousePressed () {
     Drawnertext = false;
     //
 
-    if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
-      println("yes");
-      //fill(#FFFFFF);
-      text("O", 300, 200);
+    if (mouseX>sidetwo*1/2 && mouseX<sidetwo + squaresize && mouseY>sidetwo && mouseY<sidetwo  + squaresize) {
+    textSize(50);
+    text("X",sidetwo ,sidetwo );
+    fill(#CB0C0C);
     }
     //
     if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
-      println("no");
+    textSize(50);
+    text("X", sidethree , sidetwo );
+    fill(#CB0C0C);
     }
     //
     if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
-      println("maybe");
+    textSize(50);
+    text("X", sidefour , sidetwo);
+    fill(#CB0C0C);
     }
     //
     if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidethree && mouseY<sidethree + squaresize) {
-      println("possibly");
+    textSize(50);
+    text("X", sidetwo , sidethree );
+    fill(#CB0C0C);
     }
     //
     if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidethree && mouseY<sidethree + squaresize) {
-      println("perhaps");
+    textSize(50);
+    text("X", sidethree , sidethree );
+    fill(#CB0C0C);
     }
     //
     if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidethree && mouseY<sidethree + squaresize) {
-      println("in theory");
+    textSize(50);
+    text("X", sidefour , sidethree );
+    fill(#CB0C0C);
     }
     //
     if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
-      println("in consideration");
+    textSize(50);
+    text("X", sidetwo , sidefour );
+    fill(#CB0C0C);
     }
     //
     if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
-      println("mayhaps");
+    textSize(50);
+    text("X", sidethree , sidefour );
+    fill(#CB0C0C);
     }
     //
     if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
-      println("theoretically");
+    textSize(50);
+    text("X", sidefour , sidefour );
+    fill(#CB0C0C);
     }
   }
   //
