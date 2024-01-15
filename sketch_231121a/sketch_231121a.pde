@@ -43,7 +43,7 @@ void mousePressed () {
     Drawnertext = false;
     //
 
-    if (mouseX>sidetwo*1/2 && mouseX<sidetwo + squaresize && mouseY>sidetwo && mouseY<sidetwo  + squaresize) {
+    if (mouseX>sidetwo && mouseX<sidetwo*1.5/2 + squaresize && mouseY>sidetwo && mouseY<sidetwo  + squaresize) {
     textSize(50);
     text("X",sidetwo ,sidetwo );
     fill(#CB0C0C);
