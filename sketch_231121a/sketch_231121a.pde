@@ -25,7 +25,7 @@ void draw() {
   countingTime = currentTime - timerStart;
   println(timerStart, currentTime, enteredTimeMilliSeconds);
   if ( countingTime >= enteredTimeMilliSeconds ) {
-    println("Donereno");
+    println("Done or something");
     //
   
   }
@@ -40,6 +40,7 @@ void mousePressed () {
     quad = false;
     background = true;
     Drawntext = true;
+    Drawnertext = false;
     //
 
     if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
@@ -81,7 +82,7 @@ void mousePressed () {
     }
   }
   //
-  if (mouseX>QuitX && mouseX<QuitX && mouseY>0 && mouseY<QuitY) {
+  if (mouseX>QuitX && mouseX<QuitX + squaresize && mouseY>0 && mouseY<QuitY + squaresize*1.75/2) {
     exit();
     //
   }

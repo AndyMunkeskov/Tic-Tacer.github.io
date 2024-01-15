@@ -1,12 +1,17 @@
 void Drawntext() {
   if (Drawntext) {
-    fill(#000000);
+    fill(#CB0C0C);
     textSize(50);
     text("exit", QuitX*0.955, QuitY/0.88);
     //
     textSize(50);
     text("Score", ScoreBoardX*6/6.82, ScoreBoardY*1.12);
-    fill(#FFFFFF);
+    fill(#CB0C0C);
     //
-}
+    }
+    if (Drawnertext) {
+    fill(#64D4FF);
+    textSize(50);
+    text("Click to start", 375, 300);
+    }
 }
