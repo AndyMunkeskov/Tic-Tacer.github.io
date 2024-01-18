@@ -10,7 +10,7 @@ String weatherIconString;
 //
 void iconBuildingURLSetup() {
   weatherIconSetup = baseIconURL + sun + fileExtension;
-  weatherIconImage = loadImage(weatherIconSetup);
+  //weatherIconImage = loadImage(weatherIconSetup);
 }
 void iconBuildingURLKeyPressed() {
   weatherIconString = baseIconURL + icon + fileExtension;

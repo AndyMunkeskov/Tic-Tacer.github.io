@@ -8,10 +8,10 @@ void Drawntext() {
     text("Score", ScoreBoardX*6/6.82, ScoreBoardY*1.12);
     fill(#CB0C0C);
     //
-    }
-    if (Drawnertext) {
-    fill(#64D4FF);
+  }
+  if (Drawnertext) {
+    fill(#000000);
     textSize(50);
     text("Click to start", 375, 300);
-    }
+  }
 }

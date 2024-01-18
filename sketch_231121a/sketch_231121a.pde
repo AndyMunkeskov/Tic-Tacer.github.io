@@ -13,7 +13,7 @@ void setup() {
   println(timerStart);
 }
 void draw() {
-  image (weatherIconImage, 0, 0);
+  //image (weatherIconImage, 0, 0);
   rect(widthSquare, heightSquare, widthSquare, heightSquare);
   fill(#FFFFFF);
   Background();
@@ -27,7 +27,6 @@ void draw() {
   if ( countingTime >= enteredTimeMilliSeconds ) {
     println("Done or something");
     //
-  
   }
 }
 void keyPressed () {
@@ -43,58 +42,58 @@ void mousePressed () {
     Drawnertext = false;
     //
 
-    if (mouseX>sidetwo && mouseX<sidetwo*1.5/2 + squaresize && mouseY>sidetwo && mouseY<sidetwo  + squaresize) {
-    textSize(50);
-    text("X",sidetwo ,sidetwo );
-    fill(#CB0C0C);
+    if (mouseX>side && mouseX<sidetwo*1.5/2 + squaresize && mouseY>sidetwo && mouseY<sidetwo  + squaresize) {
+      textSize(50);
+      text("X", sidetwo, sidetwo );
+      fill(#CB0C0C);
     }
     //
     if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
-    textSize(50);
-    text("X", sidethree , sidetwo );
-    fill(#CB0C0C);
+      textSize(50);
+      text("X", sidethree, sidetwo );
+      fill(#CB0C0C);
     }
     //
     if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidetwo && mouseY<sidetwo + squaresize) {
-    textSize(50);
-    text("X", sidefour , sidetwo);
-    fill(#CB0C0C);
+      textSize(50);
+      text("X", sidefour, sidetwo);
+      fill(#CB0C0C);
     }
     //
     if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidethree && mouseY<sidethree + squaresize) {
-    textSize(50);
-    text("X", sidetwo , sidethree );
-    fill(#CB0C0C);
+      textSize(50);
+      text("X", sidetwo, sidethree );
+      fill(#CB0C0C);
     }
     //
     if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidethree && mouseY<sidethree + squaresize) {
-    textSize(50);
-    text("X", sidethree , sidethree );
-    fill(#CB0C0C);
+      textSize(50);
+      text("X", sidethree, sidethree );
+      fill(#CB0C0C);
     }
     //
     if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidethree && mouseY<sidethree + squaresize) {
-    textSize(50);
-    text("X", sidefour , sidethree );
-    fill(#CB0C0C);
+      textSize(50);
+      text("X", sidefour, sidethree );
+      fill(#CB0C0C);
     }
     //
     if (mouseX>sidetwo && mouseX<sidetwo + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
-    textSize(50);
-    text("X", sidetwo , sidefour );
-    fill(#CB0C0C);
+      textSize(50);
+      text("X", sidetwo, sidefour );
+      fill(#CB0C0C);
     }
     //
     if (mouseX>sidethree && mouseX<sidethree + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
-    textSize(50);
-    text("X", sidethree , sidefour );
-    fill(#CB0C0C);
+      textSize(50);
+      text("X", sidethree, sidefour );
+      fill(#CB0C0C);
     }
     //
     if (mouseX>sidefour && mouseX<sidefour + squaresize && mouseY>sidefour && mouseY<sidefour + squaresize) {
-    textSize(50);
-    text("X", sidefour , sidefour );
-    fill(#CB0C0C);
+      textSize(50);
+      text("X", sidefour, sidefour );
+      fill(#CB0C0C);
     }
   }
   //
