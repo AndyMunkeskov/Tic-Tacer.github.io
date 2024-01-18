@@ -6,10 +6,9 @@ void setup() {
   APICall(URLCurrentEdmonton);
   size (1000, 1000);
   //
-  enteredTimeSeconds = 13; //CAUTION: will need to convert minutes and hours to seconds
+  enteredTimeSeconds = 13; 
   enteredTimeMilliSeconds = enteredTimeSeconds * 1000;
-  //Last line in Setup to adjust currentTime in void draw(){}
-  timerStart = millis(); //Measure program start time called "scope"
+  timerStart = millis(); 
   println(timerStart);
 }
 void draw() {

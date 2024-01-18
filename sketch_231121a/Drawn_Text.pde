@@ -5,7 +5,7 @@ void Drawntext() {
     text("exit", QuitX*0.955, QuitY/0.88);
     //
     textSize(50);
-    text("Score", ScoreBoardX*6/6.82, ScoreBoardY*1.12);
+    text("Score", ScoreBoardX*6/6.85, ScoreBoardY*1.15);
     fill(#CB0C0C);
     //
   }
