@@ -16,5 +16,9 @@ void squares() {
     //
     rect(ScoreBoardX, ScoreBoardY, ScoreboardW, ScoreBoardH);
     //
+   if(line){
+    line(578, 76, 578, 175);
+    line(411, 76, 411, 175);
+    }
   }
 }

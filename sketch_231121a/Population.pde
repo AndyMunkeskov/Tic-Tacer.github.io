@@ -21,4 +21,5 @@ void Population () {
   ScoreboardW = appWidth*3/6;
   ScoreBoardH = appHeight*1/10;
   //
+  
 }

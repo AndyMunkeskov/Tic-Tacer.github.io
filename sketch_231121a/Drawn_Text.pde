@@ -10,7 +10,7 @@ void Drawntext() {
     //
   }
   if (Drawnertext) {
-    fill(#000000);
+    fill(#FFFFFF);
     textSize(50);
     text("Click to start", 375, 300);
   }

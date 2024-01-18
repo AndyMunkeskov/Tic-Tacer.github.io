@@ -38,6 +38,7 @@ void mousePressed () {
     squares = true;
     quad = false;
     background = true;
+    background2 = false;
     Drawntext = true;
     Drawnertext = false;
     //
