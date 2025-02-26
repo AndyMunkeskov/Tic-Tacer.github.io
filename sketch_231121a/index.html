@@ -25,17 +25,60 @@
    <!-- Roboto --> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
    
    <style>
-        @keyframes fadeIn {
+      @keyframes fadeIn {  
             from {
                 opacity: 0;
             }
             to {
                 opacity: 1;
             }
+        
         }
+        @keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
+        @keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+        @keyframes slideInFromRightagain {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
         h1 {
             animation: fadeIn 3s ease-in-out;
+        }
+
+        .slide-in-left {
+           animation: slideInFromLeft 3s ease-in-out;
+        }
+
+        .slide-in-right {
+           animation: slideInFromRight 3s ease-in-out;
+        }
+        
+        .slide-in-right-again {
+           animation: slideInFromRightagain 4s ease-in-out;
         }
 
         .header-font {
@@ -59,15 +102,15 @@
   <!-- Portfolio Ting -->
   <section>
     <div id="incomplete">
-      <h2 class="header-font" style="font-size: 48px; margin-bottom: 2px;">My Name Is Andbr</h2>
-      <h3 class="bodypara-font" style="font-size: 30px; margin-top: 1px;">A college drop out to be</h3>
+      <h2 class="header-font slide-in-left" style="font-size: 48px; margin-bottom: 2px;">My Name Is Andbr</h2>
+      <h3 class="bodypara-font slide-in-right" style="font-size: 30px; margin-top: 1px;">A college drop out to be</h3>
     </div>
-    <div id="incomplete">
-      <h4 class="header-font">Some Things About Me:</h4>
+    <div id="incomplete"> 
+      <h4 class="header-font slide-in-right">Some Things About Me:</h4>
         <ul>
-          <li class="bodypara-font">My hobbies include writing, music (mostly punk rock, hard rock and metal), and gaming.</li>
-          <li class="bodypara-font">My favorite sport, and the only one I really care about, is hockey. <b><a href="https://www.google.com/" style="color: aqua;">*Obligatory Canadian Joke*</a></b> </li>
-          <li class="bodypara-font">I've also got a tightly knit group of idiots that I'm proud to call my friends.</li>
+          <li class="bodypara-font slideInFromRightagain">My hobbies include writing, music (mostly punk rock, hard rock and metal), and gaming.</li>
+          <li class="bodypara-font slideInFromRightagain" style="animation-duration: 4.5s;">My favorite sport, and the only one I really care about, is hockey. <b><a href="https://www.istockphoto.com/photo/big-smile-gm1072291900-286955582" style="color: aqua;">*Accurate Depiction of a Canadian*</a></b> </li>
+          <li class="bodypara-font slideInFromRightagain" style="animation-duration: 5s;">I've also got a tightly knit group of idiots that I'm proud to call my friends.</li>
         </ul>
     </div>
   </section>
