@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
-<html lang=en xml:lang=en xmlns='http://www.w3.org/1999/xhtml'>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-   <meta charset=utf-8>
+   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- Keyboard & Dynamic Window -->
 
    <noscript>Parents, please enable Javascript in your browser in order to expereince your student demo to properly</noscript>
    <!-- JavaScript Security Feedback-->
 
-   <link href="Website Dependancies/site.css" rel=stylesheet>
+   <link href="Website Dependancies/site.css" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
      <!-- Note: what does INTEGRITY mean? -->
      <!--- -->
 
-   <title>Andbr's Page</title>
+   <title>Andbr's Music Player</title>
    <link rel="icon" type="image/x-icon" href="Website Dependancies/favicon/icons8-hourglass.gif">
    <!--  https://icons8.com/icon/set/egg/family-animated--animated, 20250203 -->
    <!-- Favicon is a Pathway and Image File, not from a server. Goes into computer. -->
@@ -55,30 +55,43 @@
         opacity: 1;
     }
 }
-        @keyframes slideInFromRightagain {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+        @keyframes slideInFromRight2 {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
         h1 {
-            animation: fadeIn 3s ease-in-out;
+            animation: fadeIn 3s ease-in-out; /* Adjustable */
         }
 
         .slide-in-left {
-           animation: slideInFromLeft 3s ease-in-out;
+           animation: slideInFromLeft 2s ease-in-out; /* Adjustable */
         }
 
         .slide-in-right {
-           animation: slideInFromRight 3s ease-in-out;
+           animation: slideInFromRight 2s ease-in-out; /* Adjustable */
         }
         
-        .slide-in-right-again {
-           animation: slideInFromRightagain 4s ease-in-out;
+        .slide-in-right2 {
+            animation: slideInFromRight2 3s ease-in-out; /* Adjustable */
+        }
+
+        .slow-slide-in-right2 {
+            animation-duration: 2.8s; /* Adjustable */
+        }
+
+        .slow-slide-in-right3 {
+            animation-duration: 3.1s; /* Adjustable */
+        }
+
+        .slow-slide-in-right4 {
+            animation-duration: 3.4s; /* Adjustable */
         }
 
         .header-font {
@@ -88,6 +101,14 @@
         .bodypara-font {
             font-family: 'Roboto', sans-serif;
         }
+
+        .fixed-bottom {
+    position: fixed;
+    bottom: 7px; /* Adjustable distance from the bottom */
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 50; /* Make sure buttons ON TOP other stuff */
+}
     </style>
 </head>
 <!-- -->
@@ -96,7 +117,7 @@
 <body>
   
   <header id="incomplete">
-	 <h1 class="header-font">Andy's Webpage</h1>
+	 <h1 class="header-font">Andy's Music Player</h1>
   </header>
 
   <!-- Portfolio Ting -->
@@ -108,9 +129,9 @@
     <div id="incomplete"> 
       <h4 class="header-font slide-in-right">Some Things About Me:</h4>
         <ul>
-          <li class="bodypara-font slideInFromRightagain">My hobbies include writing, music (mostly punk rock, hard rock and metal), and gaming.</li>
-          <li class="bodypara-font slideInFromRightagain" style="animation-duration: 4.5s;">My favorite sport, and the only one I really care about, is hockey. <b><a href="https://www.istockphoto.com/photo/big-smile-gm1072291900-286955582" style="color: aqua;">*Accurate Depiction of a Canadian*</a></b> </li>
-          <li class="bodypara-font slideInFromRightagain" style="animation-duration: 5s;">I've also got a tightly knit group of idiots that I'm proud to call my friends.</li>
+          <li class="bodypara-font slide-in-right2 slow-slide-in-right2">My hobbies include writing, music (mostly punk rock, hard rock and metal), and gaming.</li>
+          <li class="bodypara-font slide-in-right2 slow-slide-in-right2" >My favorite sport, and the only one I really care about, is hockey. <b><a href="https://www.istockphoto.com/photo/big-smile-gm1072291900-286955582" style="color: aqua;">*Accurate Depiction of a Canadian*</a></b> </li>
+          <li class="bodypara-font slide-in-right2 slow-slide-in-right2" >I've also got a tightly knit group of idiots that I'm proud to call my friends.</li>
         </ul>
     </div>
   </section>
@@ -124,8 +145,14 @@
       <!-- Date Accessed: Never -->
     </div>
     <div> 
-      <p>"Case Study = Funny"</p>
-      <p>"Placeholder."</p>
+      <p>Case study showing the plan outlined for my music player. Image Is blank right now, but will be replaced with a finished drawing at a later date.</p>
+      <p>I chose to use a red, purple and white main colour scheme because for one, red and purple are my favorite colours, and two, because the mixture of these three lend pretty nicely to a minimalist, clean looking design.</p>
+    </div>
+    <div class="fixed-bottom">
+      <audio id="musicPlayer" src="Music/music-file.mp3"></audio>
+      <button onclick="pauseMusic()">Pause Music</button>
+      <button onclick="playMusic()">Play Music</button>
+      <button onclick="resetMusic()">Reset Music</button>
     </div>
   </section>
 
@@ -156,6 +183,24 @@
 
   <!-- Loading JavaScript Last: why some pages load and don't seem to 'work' -->
   <script src='./script.js'></script>
+  <script>
+    
+    function playMusic() {
+        var musicPlayer = document.getElementById('musicPlayer');
+        musicPlayer.play();
+    }
+
+    function pauseMusic() {
+        var musicPlayer = document.getElementById('musicPlayer');
+        musicPlayer.pause();
+    }
+
+    function resetMusic() {
+        var musicPlayer = document.getElementById('musicPlayer');
+        musicPlayer.pause();
+        musicPlayer.currentTime = 0;
+    }
+  </script>
 
 </body>
 <!--  -->
