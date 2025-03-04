@@ -148,3 +148,89 @@ footer {
 #incomplete {
 	background-color: rgb(126, 0, 210);
 }
+
+
+@keyframes fadeIn {  
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+
+}
+@keyframes slideInFromLeft {
+from {
+transform: translateX(-100%);
+opacity: 0;
+}
+to {
+transform: translateX(0);
+opacity: 1;
+}
+}
+
+@keyframes slideInFromRight {
+from {
+transform: translateX(100%);
+opacity: 0;
+}
+to {
+transform: translateX(0);
+opacity: 1;
+}
+}
+@keyframes slideInFromRight2 {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+h1 {
+	animation: fadeIn 3s ease-in-out; /* Adjustable */
+}
+
+.slide-in-left {
+   animation: slideInFromLeft 2s ease-in-out; /* Adjustable */
+}
+
+.slide-in-right {
+   animation: slideInFromRight 2s ease-in-out; /* Adjustable */
+}
+
+.slide-in-right2 {
+	animation: slideInFromRight2 3s ease-in-out; /* Adjustable */
+}
+
+.slow-slide-in-right2 {
+	animation-duration: 2.8s; /* Adjustable */
+}
+
+.slow-slide-in-right3 {
+	animation-duration: 3.1s; /* Adjustable */
+}
+
+.slow-slide-in-right4 {
+	animation-duration: 3.4s; /* Adjustable */
+}
+
+.header-font {
+  font-family: 'Raleway', sans-serif;
+}
+
+.bodypara-font {
+	font-family: 'Roboto', sans-serif;
+}
+
+.fixed-bottom {
+position: fixed;
+bottom: 7px; /* Adjustable distance from the bottom */
+left: 60%;
+transform: translateX(-50%);
+z-index: 50; /* Make sure buttons ON TOP other stuff */
+}
