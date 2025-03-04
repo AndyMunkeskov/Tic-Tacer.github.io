@@ -103,8 +103,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
-	max-height: 400px;
-	max-width: 100%;
+	width: 50%;
 }
 
 
@@ -204,19 +203,19 @@ h1 {
 }
 
 .slide-in-right2 {
-	animation: slideInFromRight2 3s ease-in-out; /* Adjustable */
+	animation: slideInFromRight2 3s ease-in-out; /* Slower slide animation */
 }
 
 .slow-slide-in-right2 {
-	animation-duration: 2.8s; /* Adjustable */
-}
-
-.slow-slide-in-right3 {
 	animation-duration: 3.1s; /* Adjustable */
 }
 
-.slow-slide-in-right4 {
+.slow-slide-in-right3 {
 	animation-duration: 3.4s; /* Adjustable */
+}
+
+.slow-slide-in-right4 {
+	animation-duration: 3.7s; /* Adjustable */
 }
 
 .header-font {

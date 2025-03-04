@@ -125,3 +125,24 @@ function createChecklistItem(selector) {
   checklistItem.appendChild(checklistItemContent);
   section.appendChild(checklistItem);
 }
+
+function togglePlayPause() {
+  var musicPlayer = document.getElementById('musicPlayer');
+  var playPauseButton = document.getElementById('playPauseButton');
+  
+  if (musicPlayer.paused) {
+      musicPlayer.play();
+      playPauseButton.textContent = 'Pause Music';
+  } else {
+      musicPlayer.pause();
+      playPauseButton.textContent = 'Play Music';
+  }
+}
+
+function resetMusic() {
+  var musicPlayer = document.getElementById('musicPlayer');
+  musicPlayer.pause();
+  musicPlayer.currentTime = 0;
+  document.getElementById('playPauseButton').textContent = 'Play';
+
+}

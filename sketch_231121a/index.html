@@ -32,7 +32,7 @@
 <body>
   
   <header id="incomplete">
-	 <h1 class="header-font">Andy's Music Player</h1>
+	 <h1 class="header-font">Andbr's Music Player</h1>
   </header>
 
   <!-- Portfolio Ting -->
@@ -52,30 +52,26 @@
   </section>
   
   <!-- Music Player Images Ting -->
-   <section>
+<section>
     <div>
-      <img src="https://queenelizabeth.epsb.ca/media/styleassets-schools/queenelizabeth/QueenE_T4_logo_white.png" style="max-width:50%;max-height:20%; display: block;" alt="Case Example">
-      <!-- Date Accessed: Never -->
-      <img src="Images/IsThing.jpg" style="max-width:40%;height:auto; display: block; margin-left: 0;" alt="It's a downloaded Image">
-      <!-- Date Accessed: Never -->
-    </div>
+      <img src="Images/IsThing.jpg" alt="It's a downloaded Image">
+  </div>
     <div> 
-      <p>Case study showing the plan outlined for my music player. Image Is blank right now, but will be replaced with a finished drawing at a later date.</p>
-      <p>I chose to use a red, purple and white main colour scheme because for one, red and purple are my favorite colours, and two, because the mixture of these three lend pretty nicely to a minimalist, clean looking design.</p>
-    </div>
-    <div class="fixed-bottom">
+      <p class="bodypara-font" style= "font-size:1.7vw">Case study showing the plan outlined for my music player. Image Is blank right now, but will be replaced with a finished drawing at a later date.</p>
+      <p class="bodypara-font" style= "font-size:1.7vw">I chose to use a red, purple and white main colour scheme because for one, red and purple are my favorite colours, and two, because the mixture of these three lend pretty nicely to a minimalist, clean looking design.</p>
+     </div>
+  <div class="fixed-bottom">
       <audio id="musicPlayer" src="Music/music-file.mp3"></audio>
-      <button onclick="pauseMusic()">Pause Music</button>
-      <button onclick="playMusic()">Play Music</button>
-      <button onclick="resetMusic()">Reset Music</button>
-    </div>
-  </section>
+      <button id="playPauseButton" onclick="togglePlayPause()">Play</button>
+      <button onclick="resetMusic()">Reset</button>
+  </div>
+</section>
 
   <!-- Video & YouTube API Section -->
   <section>
 	  <div> 
-      <p style="margin-top: 35px; color: black;"><b>*WARNING*</b></p> 
-      <p style="margin-bottom: 35px; color: black;">Might be very loud, I haven't tested! Click at your own discretion!</p> 
+      <p class="header-font" style="margin-top: 35px; color: black;"><b>*WARNING*</b></p> 
+      <p class="bodypara-font" style="margin-bottom: 35px; color: black;">Might be very loud, I haven't tested! Click at your own discretion!</p> 
     </div>
     
     <div>
@@ -98,24 +94,6 @@
 
   <!-- Loading JavaScript Last: why some pages load and don't seem to 'work' -->
   <script src='./script.js'></script>
-  <script>
-    
-    function playMusic() {
-        var musicPlayer = document.getElementById('musicPlayer');
-        musicPlayer.play();
-    }
-
-    function pauseMusic() {
-        var musicPlayer = document.getElementById('musicPlayer');
-        musicPlayer.pause();
-    }
-
-    function resetMusic() {
-        var musicPlayer = document.getElementById('musicPlayer');
-        musicPlayer.pause();
-        musicPlayer.currentTime = 0;
-    }
-  </script>
 
 </body>
 <!--  -->
