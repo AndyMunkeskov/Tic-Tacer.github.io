@@ -191,7 +191,7 @@ opacity: 1;
 }
 
 h1 {
-	animation: fadeIn 3s ease-in-out; /* Adjustable */
+	animation: fadeIn 2.5s ease-in-out; /* Adjustable */
 }
 
 .slide-in-left {
@@ -207,15 +207,15 @@ h1 {
 }
 
 .slow-slide-in-right2 {
-	animation-duration: 3.1s; /* Adjustable */
+	animation-duration: 2s; /* Adjustable */
 }
 
 .slow-slide-in-right3 {
-	animation-duration: 3.4s; /* Adjustable */
+	animation-duration: 2.2s; /* Adjustable */
 }
 
 .slow-slide-in-right4 {
-	animation-duration: 3.7s; /* Adjustable */
+	animation-duration: 2.4s; /* Adjustable */
 }
 
 .header-font {
