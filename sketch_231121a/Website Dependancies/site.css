@@ -158,6 +158,17 @@ footer {
 	}
 
 }
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 @keyframes slideInFromLeft {
 from {
 transform: translateX(-100%);
@@ -192,6 +203,10 @@ opacity: 1;
 
 h1 {
 	animation: fadeIn 2.5s ease-in-out; /* Adjustable */
+}
+
+.fadeIn2 {
+    animation: fadeIn2 2s ease-in-out; /* Adjust the duration as needed */
 }
 
 .slide-in-left {
