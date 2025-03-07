@@ -206,7 +206,12 @@ h1 {
 }
 
 .fadeIn2 {
-    animation: fadeIn2 2s ease-in-out; /* Adjust the duration as needed */
+    animation: fadeIn2 2s ease-in-out; /* Adjustable */
+}
+
+.fadeIn2.visible {
+    animation: fadeIn2Visible 2.5s ease-in-out;
+    opacity: 1; /* Ensure the element is visible when the animation is triggered */
 }
 
 .slide-in-left {

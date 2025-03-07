@@ -145,4 +145,18 @@ function resetMusic() {
   musicPlayer.currentTime = 0;
   document.getElementById('playPauseButton').textContent = 'Play';
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    document.querySelectorAll('.fadeIn2.visible').forEach(element => {
+        observer.observe(element);
+    });
+});
+
 }
